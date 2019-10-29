@@ -1,7 +1,7 @@
 # NoXss
-NoXss is a xss scanner, include reflected xss and dom-based xss(used browser). It can scan a single url or many urls from text file, it also support to scan traffic from burpsuite.
+NoXss is a xss scanner, include reflected xss and dom-based xss.It can scan a single url or many urls from text file,also support to scan traffic from burpsuite.It has found some xss vulnerability in Bug Bounty program.
 # Features
-+ Multithreaded
++ Multi-thread
 + Async request(use gevent)
 + Support Dom-based xss(use browser)
 + Support reflected xss
@@ -43,8 +43,9 @@ Linux
 Python2.7  
 Browser:Phantomjs or Chrome
 # Install
-1.Make sure that install the browser(chrome or phantomjs) correctly.  
-2.pip install requirements
++ 1.Make sure that install the browser(chrome or phantomjs) correctly in your machine.You can use "--check" to test:  
+`python start.py --check`  
++ 2.`pip install requirements`
 # Usage
 ```
 python start.py --url url --save
