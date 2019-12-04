@@ -43,9 +43,9 @@ Linux
 Python2.7  
 Browser:Phantomjs or Chrome
 # Install
-+ 1.Make sure that install the browser(chrome or phantomjs) correctly in your machine.You can use "--check" to test:  
++ 1.`pip install requirements`
++ 2. If you want to use browser for scanning,make sure that install the browser(chrome or phantomjs) correctly in your machine.You can use "--check" to test:  
 `python start.py --check`  
-+ 2.`pip install requirements`
 # Usage
 ```
 python start.py --url url --save
@@ -55,13 +55,13 @@ python start.py --burp ./test.xml --save
 ```
 ### Options    
 **--url**        scan from url.  
-**--id**        rescan from *.traffic file by id.  
+**--id**        rescan from *.traffic file by task id.  
 **--file**        scan urls from text file(like ./url.txt).  
 **--burp**        scan *.xml(base64 encoded,like ./test.xml) from burpsuite proxy.  
 **--process**        number of process.  
 **--cookie**        use cookie.  
-**--browser**        use browser(chrome or phantomjs) to scan,it's good at DOM-based xss.  
-**--save**        save results to ./result/taskid.json.
+**--browser**        use browser(chrome or phantomjs) to scan,it's good at DOM-based xss but slow.  
+**--save**        save results to ./result/id.json.
 ### How to rescan
 After scanning firstly,there will be taskid.traffic and taskid.reflect in ./traffic/:  
 + taskid.traffic: Web traffic of request(pickled).
