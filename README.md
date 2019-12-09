@@ -1,15 +1,13 @@
 # NoXss
 NoXss is a xss scanner, include reflected xss and dom-based xss.It can scan a single url or many urls from text file,also support to scan traffic from burpsuite.It has found some xss vulnerability in Bug Bounty program.
 # Features
-+ Multi-thread
++ Multi-process
 + Async request(use gevent)
-+ Support Dom-based xss(use browser)
-+ Support reflected xss
++ Support Dom-based xss(use browser) and reflected xss
 + Support single url,file and traffic from Burpsuite
 + Traffic filter based on interface
-+ Support headers(referer,cookie,e.g.)
++ Support speicial headers(referer,cookie,customized token,e.g.)
 + Support rescan quickly by id
-+ Json result
 # Directory
 ```
 ├── engine.py
@@ -73,4 +71,4 @@ In Proxy,"Save items" ==> "test.xml"
 ![s3](https://github.com/lwzSoviet/download/blob/master/images/s3.png)  
 ![s4](https://github.com/lwzSoviet/download/blob/master/images/s4.png)  
 Then you can scan test.xml:  
-`python start.py --burp=./test.xml --save`
+`python start.py --burp=./test.xml`
