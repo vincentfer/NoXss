@@ -33,9 +33,9 @@ NoXss is a xss scanner, include reflected xss and dom-based xss.It can scan a si
 ```
 # Screenshot
 ### Noxss:  
-![s1](https://github.com/lwzSoviet/download/blob/master/images/Noxss1.png)  
+![s1](https://github.com/lwzSoviet/download/blob/master/images/s1.png)  
 ### Use --browser:   
-![s2](https://github.com/lwzSoviet/download/blob/master/images/Noxss2.png)
+![s2](https://github.com/lwzSoviet/download/blob/master/images/s2.png)
 # Environment
 Linux  
 Python2.7  
