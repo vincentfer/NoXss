@@ -42,7 +42,7 @@ Python2.7
 Browser:Phantomjs or Chrome
 # Install
 + 1.`pip install requirements`
-+ 2. If you want to use browser for scanning,make sure that install the browser(chrome or phantomjs) correctly in your machine.You can use "--check" to test:  
++ 2.If you want to use browser for scanning,make sure that install the browser(chrome or phantomjs) correctly in your machine.You can use "--check" to test:  
 `python start.py --check`  
 # Usage
 ```
@@ -68,7 +68,7 @@ NoXss will use these middle files to rescan:
 `python start.py --id taskid --save`
 ### How to scan data from Burpsuite
 In Proxy,"Save items" ==> "test.xml"  
-![s3](https://github.com/lwzSoviet/download/blob/master/images/S3.png)  
-![s4](https://github.com/lwzSoviet/download/blob/master/images/S4.png)  
+![s3](https://github.com/lwzSoviet/download/blob/master/images/s3.png)  
+![s4](https://github.com/lwzSoviet/download/blob/master/images/s4.png)  
 Then you can scan test.xml:  
 `python start.py --burp=./test.xml`
