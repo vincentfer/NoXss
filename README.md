@@ -42,9 +42,6 @@ Linux
 Python2.7  
 Browser:Phantomjs or Chrome
 # Install
-### Windows
-+ 1.Install phantomjs([download](http://phantomjs.org/download.html )),add it to Environment Variables.
-+ 2.`pip install -r requirements`
 ### Ubuntu
 + 1.`apt-get install flex bison phantomjs`
 + 2.`pip install -r requirements`
