@@ -44,18 +44,18 @@ Browser:Phantomjs or Chrome
 # Install
 ### Windows
 + 1.Install phantomjs([download](http://phantomjs.org/download.html )),add it to Environment Variables.
-+ 2.`pip install requirements`
++ 2.`pip install -r requirements`
 ### Ubuntu
 + 1.`apt-get install flex bison phantomjs`
-+ 2.`pip install requirements`
++ 2.`pip install -r requirements`
 ### Centos
 + 1.`yum install flex bison phantomjs`
-+ 2.`pip install requirements`
++ 2.`pip install -r requirements`
 ### MacOS
 + 1.`brew install grep findutils flex phantomjs`
-+ 2.`pip install requirements`  
++ 2.`pip install -r requirements`  
 -----
-***If you want to scan use "--browser=chrome",you must install chrome mannually. You can use "--check" to test the installation.***  
+*If you want to scan use "--browser=chrome",you must install chrome mannually. You can use "--check" to test the installation.*  
 `python start.py --check`
 # Usage
 ```
