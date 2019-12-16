@@ -55,7 +55,7 @@ Browser:Phantomjs or Chrome
 + 1.`brew install grep findutils flex phantomjs`
 + 2.`pip install requirements`  
 -----
-*** If you want to scan use "--browser=chrome",you must install chrome mannually correctly. You can use "--check" to test the installation***  
+*If you want to scan use "--browser=chrome",you must install chrome mannually correctly. You can use "--check" to test the installation*  
 `python start.py --check`
 # Usage
 ```
