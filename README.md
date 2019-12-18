@@ -88,10 +88,9 @@ NoXss use only 5 payloads for scanning.These payloads are based on param's refle
 ### Async
 NoXss is highly concurrent for using coroutine.
 ### Analysis
-NoXss will save some files in traffic/ for analysing,include:
+Some xss is difficult to scan.NoXss will save some files in traffic/ for analysing,*include:
 + *.traffic(traffic file during scanning)
 + *.reflect(param's reflected result)
 + *.redirect(30x response)
 + *.error(some error happened such as timeout,connection reset,etc.)
-+ *.multipart(when request is multupart-formed,not easy to scan)  
-*Some xss is difficult to scan,these files can help users to analyse.*
++ *.multipart(when request is multupart-formed,not easy to scan)
