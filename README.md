@@ -73,7 +73,6 @@ python start.py --burp ./test.xml --save
 ### How to scan data from Burpsuite
 In Proxy,"Save items" ==> "test.xml"  
 ![s3](https://github.com/lwzSoviet/download/blob/master/images/s3.png)  
-![s4](https://github.com/lwzSoviet/download/blob/master/images/s4.png)  
 Then you can scan test.xml:  
 `python start.py --burp=./test.xml`
 ### How to rescan
@@ -82,3 +81,17 @@ After scanning firstly,there will be taskid.traffic and taskid.reflect in ./traf
 + taskid.reflect: Reflected result (pickled)that included reflected params,reflected position,type and others.  
 NoXss will use these middle files to rescan:  
 `python start.py --id taskid --save`
+# How does NoXss work?
+### Payloads
+NoXss use only 5 payloads for scanning.These payloads are based on param's reflected position.Fewer payloads make it faster than fuzzing.
+### Async&multi-process
+NoXss is highly concurrent for using coroutine.
+### Support dom-based xss
+More and more page is using dom to render html.NoXss can parse it with using Phantomjs(default) or chrome.   
+### Analysis files
+Some xss is difficult to scan.NoXss will save some files in traffic/ for analysing,include:
++ *.traffic(traffic file during scanning)
++ *.reflect(param's reflected result)
++ *.redirect(30x response)
++ *.error(some error happened such as timeout,connection reset,etc.)
++ *.multipart(when request is multupart-formed,not easy to scan)
