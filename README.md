@@ -1,5 +1,5 @@
 # NoXss
-NoXss is a xss scanner, include reflected xss and dom-based xss.It can scan a single url or many urls from text file,also support to scan traffic from burpsuite.It has found some xss vulnerabilities in Bug Bounty program.
+NoXss is a cross-site script vulnerability scanner. It's very fast and suitable for big traffic data, and support reflected xss and dom-based xss.It can scan a single url or many urls from text file,also support to scan traffic from burpsuite.It has found some xss vulnerabilities in Bug Bounty program.
 # Features
 + Payloads based on injection postion(not fuzz,more accurate,faster)
 + Multi-process
@@ -95,3 +95,8 @@ Some xss is difficult to scan.NoXss will save some files in traffic/ for analysi
 + *.redirect(30x response)
 + *.error(some error happened such as timeout,connection reset,etc.)
 + *.multipart(when request is multupart-formed,not easy to scan)
+# Example
+As you see in [Screenshot](./#screenshot),the poc is "http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs%22%3B".That means use the payload "xssjs%22%3B" in param "id":  
+![poc](https://github.com/lwzSoviet/download/blob/master/images/poc.png)  
+Then you can end the double qoutes use payload `xssjs";alert(1);//`.Visit http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs";alert(1)//:  
+![poc](https://github.com/lwzSoviet/download/blob/master/images/result.png) 

@@ -1,0 +1,1 @@
+{"Reflected XSS": [["http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs%22%3B", "GET$$$$$$http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs%22%3B$$$$$$"]]}
