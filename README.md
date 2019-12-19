@@ -1,6 +1,7 @@
 # NoXss  
+
 ![issues](https://img.shields.io/github/issues/lwzSoviet/NoXss)
-![release](https://img.shields.io/badge/release-v1.0--beta-brightgreen)
+![release](https://img.shields.io/badge/release-v1.0--beta-blue)
 ![license](https://img.shields.io/github/license/lwzSoviet/NoXss)
 
 NoXss is a cross-site script vulnerability scanner. It's very fast and suitable for big traffic data, and support reflected xss and dom-based xss.It can scan a single url or many urls from text file,also support to scan traffic from burpsuite.It has found some xss vulnerabilities in Bug Bounty program.
