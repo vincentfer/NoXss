@@ -1,1 +1,0 @@
-{"Reflected XSS": [["http://iyfsearch.com/?dn=%3Cxsshtml%3E%3C%2Fxsshtml%3E&pid=9PO755G95", "GET$$$$$$http://iyfsearch.com/?dn=%3Cxsshtml%3E%3C%2Fxsshtml%3E&pid=9PO755G95$$$$$$$$$$$$dn$$$$$$123456"], ["http://iyfsearch.com/?dn=xssjs%27%3B&pid=9PO755G95", "GET$$$$$$http://iyfsearch.com/?dn=xssjs%27%3B&pid=9PO755G95$$$$$$$$$$$$dn$$$$$$123456"]]}
